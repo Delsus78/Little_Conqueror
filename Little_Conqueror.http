@@ -1,0 +1,6 @@
+@Little_Conqueror_HostAddress = http://localhost:5215
+
+GET {{Little_Conqueror_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
