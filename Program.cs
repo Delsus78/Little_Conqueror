@@ -2,6 +2,7 @@ using System.Text.Json;
 using Little_Conqueror.Exceptions;
 using Little_Conqueror.Helpers.JsonConverters;
 using Little_Conqueror.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,13 @@ builder.Services.AddControllers(options =>
 {
     options.Filters.Add<AppExceptionFiltersAttribute>();
 });
+
+// DbContext
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 
 // Services
 builder.Services.AddScoped<ICitiesService, CitiesService>();

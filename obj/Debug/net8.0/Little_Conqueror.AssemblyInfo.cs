@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Little_Conqueror")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+238bb7ac743258d1b7665efd724f30bb78db479a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Little_Conqueror")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Little_Conqueror")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
